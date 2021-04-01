@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/36a4c2e818.js" crossorigin="anonymous"></script>
+  <title>Oem Calculator</title>
+</head>
+
+<body>
+
+  <div class="navbar navbar-dark bg-danger">
+    <div class="container">
+
+      <a href="#" class="navbar-brand">
+        Oem Calculator
+      </a>
+    </div>
+
+  </div>
+
+  <div class="container mt-3">
+    <div class="card">
+      <div class="card-body">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <input id="name" class="form-control" type="text" placeholder="Name">
+            </div>
+            <div class="form-group col-md-6">
+              <input id="price" class="form-control" type="text" placeholder="Price">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-sm addSubmit">
+            <i class="fas fa-plus"></i>
+            Add
+          </button>
+          <button type="submit" class="btn btn-warning btn-sm" id="btnSaveChanges">
+            <i class="far fa-edit"></i>
+            Save Changes
+          </button>
+          <button type="submit" class="btn btn-danger btn-sm" id="btnDelete" >
+            <i class="fas fa-times"></i>
+            Delete
+          </button>
+          <button type="submit" class="btn btn-secondary btn-sm" id="btnCancel">
+            <i class="fas fa-arrow-circle-left"></i>
+            Cancel
+          </button>
+        </form>
+
+
+      </div>
+
+
+    </div>
+
+    <div id="productCard" class="card mt-3">
+      <table class="table table-striped">
+        <thead>
+           <tr>
+             <th>ID</th>
+             <th>Name</th>
+             <th>Price</th>
+           </tr>
+        </thead>
+        <tbody id="list">
+          
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card mt-3">
+      <div class="card-footer text-right">
+           <p>Total (TL) <strong><span id="totalTl"> 0</span> TL</strong></p>
+           <p>Total ($) <strong><span  id="totalDolar">0</span> $</strong></p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
